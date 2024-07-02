@@ -7,8 +7,7 @@ void solve(int L, int n, int *x)
 {
     int minT = 0;
     int maxT = 0;
-    // min
-    // すべてのアリが近い方の端を向いている場合
+
     for (int i = 0; i < n; i++)
     {
         minT = max(minT, min(x[i], L - x[i]));
